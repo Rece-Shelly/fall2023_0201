@@ -1,0 +1,23 @@
+<!-- templates/control_flow.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Hello for loops
+    </title>
+  </head>
+  <body>
+    <p>Student list</p>
+    <p>
+      <ul>
+        {% for student in students %}
+          <li>
+            <em>{{ student.name }}:</em> {{ student.score }}/{{ max_score }}
+          </li>
+        {% endfor %}
+        </ul>
+    </p>
+  </body>
+</html>
+

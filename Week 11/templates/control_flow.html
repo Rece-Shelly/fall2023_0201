@@ -1,0 +1,21 @@
+<!-- templates/control_flow.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Hello If statements
+    </title>
+  </head>
+  <body>
+    <p>{{hello_message}}</p>
+
+    <p>
+        {% if number_message > 10 %}
+            number_message is greater than 10: number_message = {{number_message}}
+        {% else %}
+            number_message is lower than 10: number_message = {{number_message}}.
+        {% endif %}
+    </p>
+  </body>
+</html>
